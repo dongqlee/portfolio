@@ -1,0 +1,475 @@
+* {margin: 0; padding: 0;  font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
+li {list-style: none;}
+a {color: black; text-decoration: none;}
+img {display: block; width: 100%; background-repeat: no-repeat; background-size: cover;}
+html {
+  scroll-behavior: smooth;
+  
+}
+::-webkit-scrollbar-track {
+  width: 10px;
+}
+::-webkit-scrollbar {
+  height: 0px;
+  background-color: #243762;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.50);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: white;
+}
+.pointer {
+  position: absolute;
+  top: 0; left: 0;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background-color: #eee;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+  display: none;
+}
+
+.header {
+  width: 1250px; height: 50px;
+  position: fixed;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.logo {
+  width: 240px;
+  text-align: center;
+  position: fixed;
+  top: 50%; left: -100px;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  z-index: 9999;
+}
+.logo a {
+  display: block;
+  border-radius: 20px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.logo a:hover {
+  color: #243762;
+  background-color:white;
+  transition: all 0.3s;
+  border-radius: 20px;
+}
+.header ul {
+  float: right;
+}
+.header ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  transition: all 0.3s;
+  opacity: 0.5;
+  color: white;
+  cursor: pointer;
+}
+.header ul li span::after {
+  content: '';
+  width: 100%; height: 1px;
+  color: white;
+  position: absolute;
+}
+
+.header ul li:hover {
+  opacity: 1;
+}
+.header ul li:hover span::after {
+  width: 100%;
+}
+section {
+  width: 100%; height: 100vh;
+}
+.intro_box {
+  background-image: url(./images/배경질감1.jpg);
+}
+.intro_box .intro {
+  width: 1250px; 
+  margin: 0 auto;
+  position: relative;
+}
+.intro_box .txt_box01 {
+  position: absolute;
+  top: 300px; left: 100px;
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+}
+.intro_box .txt_box01 .name {
+  font-size: 40px;
+  font-weight: bold;
+  color: #E8C432;
+}
+.intro_box .txt_box01 .name:hover {
+  text-decoration: underline;
+}
+.intro_box .txt_box02 {
+  position: absolute;
+  top: 420px; left: 100px;
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+}
+.intro_box .img_box {
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s;
+  position: absolute;
+  top: 300px; right: 100px;
+  opacity: 0.5;
+}
+
+.intro_box .img_box:hover {
+  opacity: 0.8;
+}
+
+.intro_box .update {
+  width: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 20px; right: 100px;
+  color: #999;
+}
+/**************profile_box****************/
+
+.profile_box {
+  background-image: url(./images/배경질감1.jpg);
+}
+.profile_box .profile {
+  width: 1250px; height: 100vh;
+  margin: 0 auto;
+  color: white;
+  position: relative;
+}
+.profile_box .profile .info {
+  width: 620px;
+  position: absolute;
+  top: 200px; left: 0;
+}
+.profile_box .profile .info li {
+  height: 40px;
+  font-size: 20px;
+}
+
+.profile_box .profile .info li.high {
+  text-indent: 38px;
+}
+
+.profile_box .profile .timeline {
+  width: 620px;
+  position: absolute;
+  top: 500px; left: 0;
+}
+.profile_box .profile .timeline li {
+  width: 100%; height: 60px;
+  font-size: 20px;
+}
+.profile_box .profile .timeline .period {
+  position: absolute;
+  left: 0;
+}
+.profile_box .profile .timeline .txt {
+  position: absolute;
+  left: 100px;
+}
+.profile_box .skill_tab {
+  width: 1250px; height: 400px;
+  margin: 0 auto;
+  transform: translateY(-850px);
+  position: relative;
+}
+.profile_box .layer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.profile_box .skill_tab .skill {
+  width: 200px; height: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  opacity: 0.5;
+  position: relative;
+  transition: all 0.3s;
+  transform: translate(50px,50px);
+}
+.profile_box .skill_tab .skill:hover {
+  opacity: 1;
+}
+.profile_box .skill_tab .skill:nth-child(6n) {
+  margin-right: 0;
+}
+.profile_box .skill_tab .skill_logo {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  position: relative;
+  position: absolute; 
+  top: 10px; right: 50%;
+  transform: translateX(50%);
+}
+.profile_box .skill_tab .skill .vscode {
+  border: 6px solid skyblue;
+}
+.profile_box .skill_tab .skill .vscode img{
+  width: 40px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile_box .skill_tab .skill .html {
+  border: 6px solid orange;
+}
+.profile_box .skill_tab .skill .html img{
+  width: 40px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile_box .skill_tab .skill .css {
+  border: 6px solid blue;
+}
+.profile_box .skill_tab .skill .css img {
+  width: 30px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile_box .skill_tab .skill .js {
+  border: 6px solid yellow;
+}
+.profile_box .skill_tab .skill .js img {
+  width: 40px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile_box .skill_tab .skill .jq {
+  border: 6px solid rgb(14, 163, 223);
+}
+.profile_box .skill_tab .skill .jq img {
+  width: 55px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile_box .skill_tab .skill .gh {
+  border: 6px solid black;
+  overflow: hidden;
+}
+.profile_box .skill_tab .skill .gh img {
+  width: 50px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile_box .skill_tab .skill .git {
+  border: 6px solid rgb(255, 119, 0);
+  overflow: hidden;
+}
+.profile_box .skill_tab .skill .git img {
+  width: 50px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile_box .skill_tab .skill .graph {
+  border: 6px solid plum;
+  overflow: hidden;
+}
+.profile_box .skill_tab .skill .graph img {
+  width: 50px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile_box .skill_tab .skill .react {
+  border: 6px solid skyblue;
+  overflow: hidden;
+}
+.profile_box .skill_tab .skill .react img {
+  width: 50px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile_box .skill_tab .skill .sass {
+  border: 6px solid plum;
+  overflow: hidden;
+}
+.profile_box .skill_tab .skill .sass img {
+  width: 80px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile_box .skill_tab .skill .txt {
+  position: absolute;
+  top: 90px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+/**************project_box**************/
+.project_box01 {
+  background-image: url(./images/배경질감1.jpg);
+}
+
+
+.project_box01 .project01 {
+  width: 1250px; height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+.project_box01 .project01 .pro_img {
+  width: 620px; height: 620px;
+  background-color: white;
+  position: absolute;
+  top: 50%; left: 0;
+  transform: translateY(-50%);
+}
+.project_box01 .project01 .right_box {
+  width: 620px; height: 620px;
+  position: absolute;
+  top: 50%; right: 0;
+  transform: translateY(-50%);
+}
+
+.project_box01 .project01 .right_box .btn_box {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.project_box01 .project01 .right_box .btn_box .btn_github01 {
+  width: 50px; height: 50px;
+ /* border-radius: 25px;*/
+  overflow: hidden;
+  background-color: white;
+  position: absolute;
+  bottom: 20px; left: 105px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.project_box01 .project01 .right_box .btn_box .btn_github01 .github_inner {
+  width: 180px; height: 50px;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.project_box01 .project01 .right_box .btn_box .btn_github01 .github_inner .icon01 {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+}
+.project_box01 .project01 .right_box .btn_box .btn_github01 .github_inner .icon02 {
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  color: black;
+  opacity: 0;
+}
+
+.project_box01 .project01 .right_box .btn_box .btn_github02 {
+  width: 150px; height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px; left: 120px;
+  color: white;
+}
+
+.project_box01 .project01 .right_box .btn_box .btn_webpage01 {
+  width: 50px; height: 50px;
+  
+  overflow: hidden;
+  background-color: white;
+  position: absolute;
+  bottom: 20px; left: 315px;
+  z-index: 99;
+  cursor: pointer;;
+}
+
+.project_box01 .project01 .right_box .btn_box .btn_webpage01 .webpage_inner {
+  width: 180px; height: 50px;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  line-height: 50px;
+}
+.project_box01 .project01 .right_box .btn_box .btn_webpage01 .webpage_inner .icon01 {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+}
+.project_box01 .project01 .right_box .btn_box .btn_webpage01 .webpage_inner .icon02 {
+  position: absolute;
+  right: 16px;
+  font-size: 20px;
+  opacity: 0;
+  color: black;
+}
+.project_box01 .project01 .right_box .btn_box .btn_webpage02 {
+  width: 150px; height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px; left: 330px;
+  color: white;
+}
+
+.project_box02 {background-image: url(./images/배경질감1.jpg);}
+
+
+.project_box03 {background-image: url(./images/배경질감1.jpg);}
+
+
+.contact_box {
+  height: 300px;
+  background-image: url(./images/배경질감2.jpg);
+  position: relative;
+}
+
+.contact {
+  content: "";
+  width: 1250px; height: 300px;
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+.contact .txt {
+  font-size: 28px;
+}
+
+.contact .phone {
+  font-size: 24px;
+  position: absolute; 
+  top: 100px;
+}
+
+.contact .email {
+  font-size: 24px;
+  position: absolute; 
+  top: 200px;
+}
