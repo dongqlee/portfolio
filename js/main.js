@@ -201,40 +201,134 @@ window.addEventListener('scroll', () => {
 })
 
 //
-const btnGit = document.querySelector('.btn_github');
-const btnGit01 = document.querySelector('.btn_github01');
-const iconGit01 = document.querySelector('.github_inner .icon01');
-const iconGit02 = document.querySelector('.github_inner .icon02')
+const p1_btnVweb = document.querySelector('.project01 .btn_v_web');
+const p1_btnVmob = document.querySelector('.project01 .btn_v_mob');
+const p1_web =document.querySelector('.project01 .web_img');
+const p1_mob =document.querySelector('.project01 .mob_img');
 
-const btnWeb = document.querySelector('.btn_webpage');
-const btnWeb01 = document.querySelector('.btn_webpage01');
-const iconWeb01 = document.querySelector('.webpage_inner .icon01');
-const iconWeb02 = document.querySelector('.webpage_inner .icon02');
+p1_btnVweb.addEventListener('click', () => {
+  p1_btnVweb.style.cssText = 'opacity: 1; text-decoration: underline;'
+  p1_btnVmob.style.cssText = 'opacity: 0.5; text-decoration: none;'
+  p1_web.style.display = 'block'
+  p1_mob.style.display = 'none'
+});
+p1_btnVmob.addEventListener('click', () => {
+  p1_btnVmob.style.cssText = 'opacity: 1; text-decoration: underline;'
+  p1_btnVweb.style.cssText = 'opacity: 0.5; text-decoration: none;'
+  p1_mob.style.display = 'block'
+  p1_web.style.display = 'none'
+});
 
-btnGit.addEventListener('mouseenter', () => {
-  btnGit01.style.cssText = 'transition: all 0.3s; width: 180px;'
-  iconGit01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
-  iconGit02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
+//
+const p1_btnGit = document.querySelector('.project01 .btn_github');
+const p1_btnGit01 = document.querySelector('.project01 .btn_github01');
+const p1_iconGit01 = document.querySelector('.project01 .github_inner .icon01');
+const p1_iconGit02 = document.querySelector('.project01 .github_inner .icon02');
+
+const p2_btnGit = document.querySelector('.project02 .btn_github');
+const p2_btnGit01 = document.querySelector('.project02 .btn_github01');
+const p2_iconGit01 = document.querySelector('.project02 .github_inner .icon01');
+const p2_iconGit02 = document.querySelector('.project02 .github_inner .icon02');
+
+const p3_btnGit = document.querySelector('.project03 .btn_github');
+const p3_btnGit01 = document.querySelector('.project03 .btn_github01');
+const p3_iconGit01 = document.querySelector('.project03 .github_inner .icon01');
+const p3_iconGit02 = document.querySelector('.project03 .github_inner .icon02');
+
+const p1_btnWeb = document.querySelector('.project01 .btn_webpage');
+const p1_btnWeb01 = document.querySelector('.project01 .btn_webpage01');
+const p1_iconWeb01 = document.querySelector('.project01 .webpage_inner .icon01');
+const p1_iconWeb02 = document.querySelector('.project01 .webpage_inner .icon02');
+
+const p2_btnWeb = document.querySelector('.project02 .btn_webpage');
+const p2_btnWeb01 = document.querySelector('.project02 .btn_webpage01');
+const p2_iconWeb01 = document.querySelector('.project02 .webpage_inner .icon01');
+const p2_iconWeb02 = document.querySelector('.project02 .webpage_inner .icon02');
+
+const p3_btnWeb = document.querySelector('.project03 .btn_webpage');
+const p3_btnWeb01 = document.querySelector('.project03 .btn_webpage01');
+const p3_iconWeb01 = document.querySelector('.project03 .webpage_inner .icon01');
+const p3_iconWeb02 = document.querySelector('.project03 .webpage_inner .icon02');
+
+
+p1_btnGit.addEventListener('mouseenter', () => {
+  p1_btnGit01.style.cssText = 'transition: all 0.3s; width: 180px;'
+  p1_iconGit01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
+  p1_iconGit02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
 })
 
-btnGit.addEventListener('mouseleave', () => {
-  btnGit01.style.cssText = 'transition: all 0.3s; width: 50px;'
-  iconGit01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
-  iconGit02.style.cssText = 'transition: all 0.1s; opacity: 0;'
+p1_btnGit.addEventListener('mouseleave', () => {
+  p1_btnGit01.style.cssText = 'transition: all 0.3s; width: 50px;'
+  p1_iconGit01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
+  p1_iconGit02.style.cssText = 'transition: all 0.1s; opacity: 0;'
 })
 
-btnWeb.addEventListener('mouseenter', () => {
-  btnWeb01.style.cssText = 'transition: all 0.3s; width: 180px;'
-  iconWeb01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
-  iconWeb02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
+p1_btnWeb.addEventListener('mouseenter', () => {
+  p1_btnWeb01.style.cssText = 'transition: all 0.3s; width: 180px;'
+  p1_iconWeb01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
+  p1_iconWeb02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
 })
 
-btnWeb.addEventListener('mouseleave', () => {
-  btnWeb01.style.cssText = 'transition: all 0.3s; width: 50px;'
-  iconWeb01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
-  iconWeb02.style.cssText = 'transition: all 0.1s; opacity: 0;'
+p1_btnWeb.addEventListener('mouseleave', () => {
+  p1_btnWeb01.style.cssText = 'transition: all 0.3s; width: 50px;'
+  p1_iconWeb01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
+  p1_iconWeb02.style.cssText = 'transition: all 0.1s; opacity: 0;'
 })
 
-let modalBox = document.createElement('div')
+p2_btnGit.addEventListener('mouseenter', () => {
+  p2_btnGit01.style.cssText = 'transition: all 0.3s; width: 180px;'
+  p2_iconGit01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
+  p2_iconGit02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
+})
 
-modalBox.setAttribute('class', 'modal_box')
+p2_btnGit.addEventListener('mouseleave', () => {
+  p2_btnGit01.style.cssText = 'transition: all 0.3s; width: 50px;'
+  p2_iconGit01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
+  p2_iconGit02.style.cssText = 'transition: all 0.1s; opacity: 0;'
+})
+
+p2_btnWeb.addEventListener('mouseenter', () => {
+  p2_btnWeb01.style.cssText = 'transition: all 0.3s; width: 180px;'
+  p2_iconWeb01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
+  p2_iconWeb02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
+})
+
+p2_btnWeb.addEventListener('mouseleave', () => {
+  p2_btnWeb01.style.cssText = 'transition: all 0.3s; width: 50px;'
+  p2_iconWeb01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
+  p2_iconWeb02.style.cssText = 'transition: all 0.1s; opacity: 0;'
+})
+
+p3_btnGit.addEventListener('mouseenter', () => {
+  p3_btnGit01.style.cssText = 'transition: all 0.3s; width: 180px;'
+  p3_iconGit01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
+  p3_iconGit02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
+})
+
+p3_btnGit.addEventListener('mouseleave', () => {
+  p3_btnGit01.style.cssText = 'transition: all 0.3s; width: 50px;'
+  p3_iconGit01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
+  p3_iconGit02.style.cssText = 'transition: all 0.1s; opacity: 0;'
+})
+
+p3_btnWeb.addEventListener('mouseenter', () => {
+  p3_btnWeb01.style.cssText = 'transition: all 0.3s; width: 180px;'
+  p3_iconWeb01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
+  p3_iconWeb02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
+})
+
+p3_btnWeb.addEventListener('mouseleave', () => {
+  p3_btnWeb01.style.cssText = 'transition: all 0.3s; width: 50px;'
+  p3_iconWeb01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
+  p3_iconWeb02.style.cssText = 'transition: all 0.1s; opacity: 0;'
+})
+
+let modalBox = document.createElement('div');
+modalBox.setAttribute('class', 'modal_box');
+
+let proposalBox = document.createElement('div');
+proposalBox.setAttribute('class', 'proposal_box');
+
+modalBox.appendChild(proposalBox);
+body.appendChild(modalBox);
+
