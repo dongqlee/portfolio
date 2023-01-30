@@ -34,6 +34,7 @@ const contact = document.getElementById('contact')
 const pageProfile =document.querySelector('.profile_box')
 const pageproject =document.querySelector('.project_box01')
 const pageContact =document.querySelector('.contact_box')
+const arrow = document.querySelector('.arrow')
 
 intro.addEventListener('click', () => {
   window.scrollTo({
@@ -67,10 +68,14 @@ contact.addEventListener('click', () => {
   })
 })
 
-
-
-
-
+arrow.animate({
+  bottom: '30px'
+}, {
+  duration: 2000,
+  delay: 500,
+  easing: 'ease-in-out',
+  iterations: 'Infinity'
+})
 //
 const txtBox01 = document.querySelector('.txt_box01')
 
@@ -106,7 +111,6 @@ upDate.animate({
   delay: 1200,
   fill: 'forwards'
 })
-
 
 //skill_tab
 const skill01 = document.querySelector('.skill01')
@@ -200,56 +204,40 @@ window.addEventListener('scroll', () => {
   }
 })
 
-//
-const p1_btnVweb = document.querySelector('.project01 .btn_v_web');
-const p1_btnVmob = document.querySelector('.project01 .btn_v_mob');
-const p1_web =document.querySelector('.project01 .web_img');
-const p1_mob =document.querySelector('.project01 .mob_img');
 
-p1_btnVweb.addEventListener('click', () => {
-  p1_btnVweb.style.cssText = 'opacity: 1; text-decoration: underline;'
-  p1_btnVmob.style.cssText = 'opacity: 0.5; text-decoration: none;'
-  p1_web.style.display = 'block'
-  p1_mob.style.display = 'none'
-});
-p1_btnVmob.addEventListener('click', () => {
-  p1_btnVmob.style.cssText = 'opacity: 1; text-decoration: underline;'
-  p1_btnVweb.style.cssText = 'opacity: 0.5; text-decoration: none;'
-  p1_mob.style.display = 'block'
-  p1_web.style.display = 'none'
-});
-
-//
+//button_effect
 const p1_btnGit = document.querySelector('.project01 .btn_github');
 const p1_btnGit01 = document.querySelector('.project01 .btn_github01');
 const p1_iconGit01 = document.querySelector('.project01 .github_inner .icon01');
 const p1_iconGit02 = document.querySelector('.project01 .github_inner .icon02');
+const p1_btnWeb = document.querySelector('.project01 .btn_webpage');
+const p1_btnWeb01 = document.querySelector('.project01 .btn_webpage01');
+const p1_iconWeb01 = document.querySelector('.project01 .webpage_inner .icon01');
+const p1_iconWeb02 = document.querySelector('.project01 .webpage_inner .icon02');
+const p1_btnMob = document.querySelector('.project01 .btn_mobile');
+const p1_btnMob01 = document.querySelector('.project01 .btn_mobile01');
+const p1_iconMob01 = document.querySelector('.project01 .mobile_inner .icon01');
+const p1_iconMob02 = document.querySelector('.project01 .mobile_inner .icon02');
+
 
 const p2_btnGit = document.querySelector('.project02 .btn_github');
 const p2_btnGit01 = document.querySelector('.project02 .btn_github01');
 const p2_iconGit01 = document.querySelector('.project02 .github_inner .icon01');
 const p2_iconGit02 = document.querySelector('.project02 .github_inner .icon02');
+const p2_btnWeb = document.querySelector('.project02 .btn_webpage');
+const p2_btnWeb01 = document.querySelector('.project02 .btn_webpage01');
+const p2_iconWeb01 = document.querySelector('.project02 .webpage_inner .icon01');
+const p2_iconWeb02 = document.querySelector('.project02 .webpage_inner .icon02');
 
 const p3_btnGit = document.querySelector('.project03 .btn_github');
 const p3_btnGit01 = document.querySelector('.project03 .btn_github01');
 const p3_iconGit01 = document.querySelector('.project03 .github_inner .icon01');
 const p3_iconGit02 = document.querySelector('.project03 .github_inner .icon02');
 
-const p1_btnWeb = document.querySelector('.project01 .btn_webpage');
-const p1_btnWeb01 = document.querySelector('.project01 .btn_webpage01');
-const p1_iconWeb01 = document.querySelector('.project01 .webpage_inner .icon01');
-const p1_iconWeb02 = document.querySelector('.project01 .webpage_inner .icon02');
-
-const p2_btnWeb = document.querySelector('.project02 .btn_webpage');
-const p2_btnWeb01 = document.querySelector('.project02 .btn_webpage01');
-const p2_iconWeb01 = document.querySelector('.project02 .webpage_inner .icon01');
-const p2_iconWeb02 = document.querySelector('.project02 .webpage_inner .icon02');
-
 const p3_btnWeb = document.querySelector('.project03 .btn_webpage');
 const p3_btnWeb01 = document.querySelector('.project03 .btn_webpage01');
 const p3_iconWeb01 = document.querySelector('.project03 .webpage_inner .icon01');
 const p3_iconWeb02 = document.querySelector('.project03 .webpage_inner .icon02');
-
 
 p1_btnGit.addEventListener('mouseenter', () => {
   p1_btnGit01.style.cssText = 'transition: all 0.3s; width: 180px;'
@@ -273,6 +261,17 @@ p1_btnWeb.addEventListener('mouseleave', () => {
   p1_btnWeb01.style.cssText = 'transition: all 0.3s; width: 50px;'
   p1_iconWeb01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
   p1_iconWeb02.style.cssText = 'transition: all 0.1s; opacity: 0;'
+})
+
+p1_btnMob.addEventListener('mouseenter', () => {
+  p1_btnMob01.style.cssText = 'transition: all 0.3s; width: 180px;'
+  p1_iconMob01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
+  p1_iconMob02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
+})
+p1_btnMob.addEventListener('mouseleave', () => {
+  p1_btnMob01.style.cssText = 'transition: all 0.3s; width: 50px;'
+  p1_iconMob01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
+  p1_iconMob02.style.cssText = 'transition: all 0.1s; opacity: 0;'
 })
 
 p2_btnGit.addEventListener('mouseenter', () => {
@@ -322,13 +321,72 @@ p3_btnWeb.addEventListener('mouseleave', () => {
   p3_iconWeb01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
   p3_iconWeb02.style.cssText = 'transition: all 0.1s; opacity: 0;'
 })
+p1_btnGit.addEventListener('click', () => {
+  window.open('https://github.com/dongqlee/project01')
+})
+p1_btnWeb.addEventListener('click', () => {
+  window.open('https://dongqlee.github.io/project01/')
+})
+p1_btnMob.addEventListener('click', () => {
+  window.open('https://dongqlee.github.io/project01_mob/', 'naver', 'width = 390, height = 720')
+})
+p2_btnGit.addEventListener('click', () => {
+  window.open('https://github.com/dongqlee/project02')
+})
+p2_btnWeb.addEventListener('click', () => {
+  window.open('http://dongqlee.dothome.co.kr/index.html')
+})
+p3_btnGit.addEventListener('click', () => {
+  window.open('https://github.com/dongqlee/react_jordan.git')
+})
+p3_btnWeb.addEventListener('click', () => {
+  window.open('https://dongqlee.github.io/react_jordan')
+})
 
-let modalBox = document.createElement('div');
-modalBox.setAttribute('class', 'modal_box');
 
-let proposalBox = document.createElement('div');
-proposalBox.setAttribute('class', 'proposal_box');
+let web01 = document.querySelector('.project01 .pro_img');
+let web02 = document.querySelector('.project02 .pro_img');
+let web03 = document.querySelector('.project03 .pro_img');
 
-modalBox.appendChild(proposalBox);
-body.appendChild(modalBox);
+web01.addEventListener('click', () => {
+  window.open('https://dongqlee.github.io/project01/')
+})
 
+web02.addEventListener('click', () => {
+  window.open('http://dongqlee.dothome.co.kr/index.html')
+})
+
+web03.addEventListener('click', () => {
+  window.open('https://dongqlee.github.io/react_jordan')
+})
+//
+let project01 = document.querySelector('.project01');
+let project02 = document.querySelector('.project02');
+let project03 = document.querySelector('.project03');
+
+let btnPro01 = document.querySelector('.project01 .proposal');
+let btnPro02 = document.querySelector('.project02 .proposal');
+let btnPro03 = document.querySelector('.project03 .proposal');
+
+let modalBox01 = document.querySelector('.project01 .modal_box');
+let modalBox02 = document.querySelector('.project02 .modal_box');
+let modalBox03 = document.querySelector('.project03 .modal_box');
+
+let btnClose01 = document.querySelector('.project01 .modal_box .btn_close');
+let btnClose02 = document.querySelector('.project02 .modal_box .btn_close');
+let btnClose03 = document.querySelector('.project03 .modal_box .btn_close');
+
+btnPro01.addEventListener('click', () => {
+  modalBox01.style.display = 'block'
+})
+btnPro02.addEventListener('click', () => {
+  modalBox02.style.display = 'block'
+})
+
+
+btnClose01.addEventListener('click', () => {
+  modalBox01.style.display = 'none'
+})
+btnClose02.addEventListener('click', () => {
+  modalBox02.style.display = 'none'
+})
