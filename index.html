@@ -251,7 +251,7 @@
           개인 프로젝트로 웹과 모바일 버전 각각 제작한 적응형 사이트입니다.<br />
           맛있닭 홈페이지를 기존사이트에서 사용성을 향상시키는 방향으로 리뉴얼했습니다. <br />
           웹 사이트에서 Swiperjs를 활용하여 슬라이드를 구성하고, <br />
-          서브 페이지에는 lodash로 
+          서브 페이지에는 sort기능을 lodash로 구현하였습니다.
         </p>
         <ul class="skill_logo">
           <li><img src="./images/html5.png" alt="skill로고 이미지"></li>
@@ -304,19 +304,21 @@
       </div>  <!--right_box-->
       <div class="modal_box">
         <span class="btn_close">X</span>
-        <ul class="proposal_box">
-          <li><img src="./images/pro1_props1.JPG" alt=""></li>
-          <li><img src="./images/pro1_props2.JPG" alt=""></li>
-          <li><img src="./images/pro1_props3.JPG" alt=""></li>
-          <li><img src="./images/pro1_props4.JPG" alt=""></li>
-          <li><img src="./images/pro1_props5.JPG" alt=""></li>
-          <li><img src="./images/pro1_props6.JPG" alt=""></li>
-          <li>
-            Main color: White<br />
-            Sub color: Black<br />
-            Point color: Orange<br />
-          </li>
-        </ul>
+        <div class="proposal_sheet">
+          <ul class="proposal_box">
+            <li><img src="./images/pro1_props1.JPG" alt=""></li>
+            <li><img src="./images/pro1_props2.JPG" alt=""></li>
+            <li><img src="./images/pro1_props3.JPG" alt=""></li>
+            <li><img src="./images/pro1_props4.JPG" alt=""></li>
+            <li><img src="./images/pro1_props5.JPG" alt=""></li>
+            <li><img src="./images/pro1_props6.JPG" alt=""></li>
+            <li>
+              Main color: White<br />
+              Sub color: Black<br />
+              Point color: Orange<br />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>   <!--project01-->
   </section><!--project_box01-->
@@ -340,9 +342,12 @@
           <br />
 
           <br />
-          팀원 모두가 아이디어 도출과정에 참여하였고, <br /> 개별로 코드작업을 하였습니다.
-          <br /> 저는 기획 과정에서 주제선정, 기획의도,<br />
-          컨셉과 키워드, font, color plan을 담당하였습니다.
+          팀원 모두가 각자 간단한 아이디어 스케치로 의견을 제시하고 토의를 통해  <br />UI/UX, 기능, 효과 등 아이디어를 통합하였고, 개별로 코드작업을 하였습니다.
+          <br /> 
+          아이디어 스케치(2명), 기획서 작성(3명) 파트에서
+          저는 기획서에 주제선정, 기획의도,<br />
+          컨셉과 키워드, font, color plan 작성을 담당하였습니다.
+
         </p>
         <ul class="skill_logo">
           <li>
@@ -391,26 +396,28 @@
       </div>
       <div class="modal_box">
         <span class="btn_close">X</span>
-        <ul class="proposal_box">
-          <li><img src="./images/pro2_props1.JPG" alt=""></li>
-          <li><img src="./images/pro2_props2.JPG" alt=""></li>
-          <li><img src="./images/pro2_props3.JPG" alt=""></li>
-          <li><img src="./images/pro2_props4.JPG" alt=""></li>
-          <li><img src="./images/pro2_props5.JPG" alt=""></li>
-          <li><img src="./images/pro2_props6.JPG" alt=""></li>
-          <li><img src="./images/pro2_props7.JPG" alt=""></li>
-          <li><img src="./images/pro2_props8.JPG" alt=""></li>
-          <li><img src="./images/pro2_props9.JPG" alt=""></li>
-          <li><img src="./images/pro2_props10.JPG" alt=""></li>
-          <li><img src="./images/pro2_props11.JPG" alt=""></li>
-          <li><img src="./images/pro2_props12.JPG" alt=""></li>
-          <li><img src="./images/pro2_props13.JPG" alt=""></li>
-          <li><img src="./images/pro2_props14.JPG" alt=""></li>
-          <li><img src="./images/pro2_props15.JPG" alt=""></li>
-          <li><img src="./images/pro2_props16.JPG" alt=""></li>
-          <li><img src="./images/pro2_props17.JPG" alt=""></li>
-          <li><img src="./images/pro2_props18.JPG" alt=""></li>
-        </ul>
+        <div class="proposal_sheet">
+          <ul class="proposal_box">
+            <li><img src="./images/pro2_props1.JPG" alt=""></li>
+            <li><img src="./images/pro2_props2.JPG" alt=""></li>
+            <li><img src="./images/pro2_props3.JPG" alt=""></li>
+            <li><img src="./images/pro2_props4.JPG" alt=""></li>
+            <li><img src="./images/pro2_props5.JPG" alt=""></li>
+            <li><img src="./images/pro2_props6.JPG" alt=""></li>
+            <li><img src="./images/pro2_props7.JPG" alt=""></li>
+            <li><img src="./images/pro2_props8.JPG" alt=""></li>
+            <li><img src="./images/pro2_props9.JPG" alt=""></li>
+            <li><img src="./images/pro2_props10.JPG" alt=""></li>
+            <li><img src="./images/pro2_props11.JPG" alt=""></li>
+            <li><img src="./images/pro2_props12.JPG" alt=""></li>
+            <li><img src="./images/pro2_props13.JPG" alt=""></li>
+            <li><img src="./images/pro2_props14.JPG" alt=""></li>
+            <li><img src="./images/pro2_props15.JPG" alt=""></li>
+            <li><img src="./images/pro2_props16.JPG" alt=""></li>
+            <li><img src="./images/pro2_props17.JPG" alt=""></li>
+            <li><img src="./images/pro2_props18.JPG" alt=""></li>
+          </ul>
+        </div>
       </div>
       <div class="pro_img">
         <img src="./images/pro2_600.gif" alt="프로젝트 2 이미지">
@@ -432,8 +439,9 @@
         </p>
         <p class="pro03_txt">
           Nike Air Jordan 사이트를 React로 구현하였습니다.<br />
-          component로 페이지를 구성하여 SPA 형식으로 제작하였습니다.<br />
-          Redux를 활용하여 장바구니 기능을 생성하였습니다.
+          component로 페이지를 구성하였고, <br />
+          Route로 SPA 형식의 사이트를 구현하였습니다.<br />
+          Redux toolkit을 활용하여 장바구니 기능을 생성하였습니다.
         </p>
         <ul class="skill_logo">
           <li>

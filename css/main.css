@@ -417,52 +417,40 @@ section {
   text-decoration: underline;
 }
 .project01 .modal_box,
-.project02 .modal_box,
-.project03 .modal_box {
-  width: 100%; height: 100%;
+.project02 .modal_box {
+  width: 100%; height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0; left: 0; bottom: 0; right: 0;
   z-index: 9999;
   display: none;
 }
-.project01 .modal_box .proposal_box,
-.project03 .modal_box .proposal_box {
-  width: 930px; height: 80vh;
-  border: 1px solid white;
-  box-sizing: border-box;
-  position: absolute; 
+.project01 .modal_box .proposal_sheet, 
+.project02 .modal_box .proposal_sheet {
+  width: 1050px; height: 80vh;
+  position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   position: relative;
-  overflow: auto;
-}
-.project02 .modal_box .proposal_box {
-  width: 930px; height: 80vh;
   border: 1px solid white;
   box-sizing: border-box;
-  position: absolute; 
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #243762;
   overflow: auto;
 }
+.project01 .modal_box .proposal_box,
+.project02 .modal_box .proposal_box {
+  width: 930px; height: 80vh;
+  margin: 0 auto;
+  position: relative;
+}
+
 .project01 .modal_box .proposal_box li:last-child {
   padding: 10px;
   background-color: white;
 }
 .project01 .modal_box .btn_close, 
-.project03 .modal_box .btn_close {
-  width: 930px; height: 30px;
-  font-size: 30px;
-  color: white;
-  position: absolute;
-  top: 40px; right: 50%;
-  transform: translateX(50%);
-  text-align: right;
-  cursor: pointer;
-}
 .project02 .modal_box .btn_close {
-  width: 930px; height: 30px;
+  width: 1050px; height: 30px;
   font-size: 30px;
   color: white;
   position: absolute;
@@ -580,10 +568,6 @@ section {
   bottom: 20px; left: 275px;
   color: white;
 }
-
-
-
-
 
 .project_box01 .project01 .right_box .btn_box .btn_mobile01 {
   width: 50px; height: 50px;
@@ -963,7 +947,13 @@ section {
   background-image: url(./images/배경질감1.jpg);
   position: relative;
 }
-
+.contact_box::before {
+  content: '';
+  width: 100%; height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 .contact {
   width: 1250px; height: 200px;
   position: absolute;
@@ -977,7 +967,7 @@ section {
   font-weight: bold;
   color: white;
   position: absolute;
-  bottom: 180px; left: 35%;
+  bottom: 220px; left: 35%;
   transform: translateX(-50%);
   opacity: 0.5;
   transform: rotate(-15deg);
