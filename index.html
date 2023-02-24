@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DonggyuLee's portfolio</title>
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+  <script src="./js/main.js" defer></script>
+  
+  <!--font-->
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <div class="pointer"></div>
+  
+  <header class="header">
+    <ul>
+      <li id="intro">INTRO</li>
+      <li id="profile">PROFILE</li>
+      <li id="project">PROJECT</li>
+      <li id="contact">CONTACT</li>
+    </ul>
+  </header>
+  <div class="logo" id="logo">
+    <a href="">Donggyu Lee</a> 
+  </div>
+  <section class="intro_box">
+    <div class="intro">
+      <div class="txt_box01">
+        안녕하세요.<br /> 프론트엔드 개발자를 희망하는 
+        <span class="name">이동규</span>입니다.
+      </div>
+      <div class="txt_box02">
+        저는 기본기를 가장 중요하게 생각하고<br /> 
+        지속 가능한 코드 작성과<br /> 성능 향상을 위해 노력하고 있습니다.
+      </div>
+      <div class="img_box">
+        <img src="./images/photo02.jpg" alt="">
+      </div>
+    </div>
+    <div class="front_end">
+      FRONT-END
+    </div>
+    <div class="developer">
+      DEVELOPER
+    </div>
+    <span class="notice">
+      본 포트폴리오는 취업용으로 개인 포트폴리오로만 사용됩니다.<br/>
+      해상도 1920 환경에 적합하게 제작되었습니다.
+    </span>
+    <span class="arrow"><i class="fa-solid fa-arrow-down"></i></span>
+    <span class="update">
+      Last Update: 2023/02/24
+    </span>
+  </section>
+  <section class="profile_box">
+  
+    <div class="profile">
+      <ul class="info">
+        <li>이름: 이동규</li>
+        <li>생년월일: 1994/05/13</li>        
+        <li>주소지: 부산광역시 부산진구</li>
+        <li>연락처: 010 - 4022 - 0513 </li>
+        <li>학력: 경성대학교 경영학과 졸업(2020/02)</li>
+        <li class="high">동아고등학교 졸업(2013/02)</li>
+      </ul>
+      <ul class="timeline">
+        <li>
+          <span class="period">
+            2022/08 -<br />
+            2023/02
+          </span>
+          <span class="txt">
+            프론트엔드 개발자 양성과정<br />
+            (국비교육, 그린컴퓨터 아카데미)
+          </span>
+        </li>
+        <li>
+          <span class="period">
+            2019/03 -<br />
+            2019/06
+          </span>
+          <span class="txt">
+            부산상공회의소 홍보정책실(장기현장실습)
+          </span>
+        </li>
+        <li>
+          <span class="period">
+            2017/06 -<br />
+            2017/01
+          </span>
+          <span class="txt">
+            부산금융박물관로드 자원봉사
+          </span>
+        </li>
+        <li>
+          <span class="period">
+            2017/07 -<br />
+            2017/03
+          </span>
+          <span class="txt">
+            e-쑤시게 교육봉사
+          </span>
+        </li>
+        <li>
+          <span class="period">
+            2016/02 -<br />
+            2014/05
+          </span>
+          <span class="txt">
+            육군 병장 만기전역
+          </span>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="skill_tab">
+
+      <div class="layer">
+        <div class="skill skill01">
+          <div class="skill_logo vscode">
+            <img src="./images/vscode.jpg" alt="vscode이미지">
+          </div>
+          <div class="txt">개발환경 <br /> Visual Studio Code</div>
+        </div>
+      </div>
+
+      <div class="layer">
+        <div class="skill skill02">
+          <div class="skill_logo html">
+            <img src="./images/html5.png" alt="html5이미지">
+          </div>
+          <div class="txt">
+            웹표준 기반 태그,<br /> 
+            시멘틱 구조 태그로 
+            레이아웃 구성
+          </div>
+        </div>
+        <div class="skill skill03">
+          <div class="skill_logo css">
+            <img src="./images/css3.png" alt="css3이미지">
+          </div>
+          <div class="txt">
+            position, display,
+            transition, flex 등으로 
+            레이아웃과 스타일을 정의<br />
+            
+            Media query로 반응형 웹제작
+          </div>
+        </div>
+      </div>
+
+      <div class="layer">
+        <div class="skill skill04">
+          <div class="skill_logo js">
+            <img src="./images/javascript.svg" alt="javascript이미지">
+          </div>
+          <div class="txt">
+            함수로 데이터 처리,
+            기능 구현 <br />
+            swiper 등 라이브러리로 동적인 기능 구현 <br />
+            fetch API 사용
+          </div>
+        </div>
+        <div class="skill skill05">
+          <div class="skill_logo jq">
+            <img src="./images/JQuery.png" alt="JQuery이미지">
+          </div>
+          <div class="txt">
+            웹 사이트 내 동적인 기능 구현
+            slick, gsap 등 라이브러리 사용
+          </div>
+        </div>
+        <div class="skill skill06">
+          <div class="skill_logo gh">
+            <img src="./images/github.png" alt="github이미지">
+          </div>
+          <div class="txt">
+            Repository를 생성, 프로젝트 버전 관리<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="layer">
+        <div class="skill skill07">
+          <div class="skill_logo git">
+            <img src="./images/git.png" alt="git이미지">
+          </div>
+          <div class="txt">
+            버전 관리<br />
+            (commit, branch, merge)
+            build, deploy 배포
+          </div>
+        </div>
+        <div class="skill skill08">
+          <div class="skill_logo graph">
+            <img src="./images/GraphQL.png" alt="GraphQL이미지">
+          </div>
+          <div class="txt">Apollo-server를 활용하여 데이터 구축, 편집</div>
+        </div>
+        <div class="skill skill09">
+          <div class="skill_logo react">
+            <img src="./images/react.png" alt="react이미지">
+          </div>
+          <div class="txt">
+            component로 사이트 제작
+            styeldcomponent, sass로 스타일 제작
+            hook 사용, redux 사용
+          </div>
+        </div>
+        <div class="skill skill10">
+          <div class="skill_logo sass">
+            <img src="./images/sass.png" alt="sass이미지">
+          </div>
+          <div class="txt">
+            변수와 중첩을 활용하여
+            재사용성과 유지보수성 개선 <br />
+            React에서 component로 사용, 번들러로도 사용
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="project_box01">
+    <div class="pro_txt">
+      PROJECT
+    </div>
+    <div class="project01">
+      <div class="pro_img">
+        <img src="./images/pro1_600.gif" alt="프로젝트 1 이미지">
+      </div>
+      <div class="right_box">
+        <p class="pro_title">
+          개인프로젝트 / React site
+        </p>
+        <p class="site">
+          Nike Air Jordan 사이트 구현
+        </p>
+        <p class="pro01_txt">
+          Nike Air Jordan 사이트를 React로 구현하였습니다.<br />
+          component로 페이지를 구성하였고, <br />
+          Route로 SPA 형식의 사이트를 구현하였습니다.<br />
+          Redux toolkit을 활용하여 장바구니 기능을 생성하였습니다.
+        </p>
+        <ul class="skill_logo">
+          <li>
+            <img src="./images/html5.png" alt="skill로고 이미지">
+          </li>
+          <li>
+            <img src="./images/css3.png" alt="skill로고 이미지">
+          </li>
+          <li>
+            <img src="./images/javascript.svg" alt="skill로고 이미지">
+          </li>
+          <li>
+            <img src="./images/react.png" alt="skill로고 이미지">
+          </li>
+        </ul>
+        <div class="btn_box">
+          <div class="btn_github">
+            <div class="btn_github01">
+              <div class="github_inner">
+                <span class="icon01"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="txt">Github</span>
+                <span class="icon02"><i class="fa-solid fa-arrow-right"></i></span> 
+              </div>
+            </div>
+            <div class="btn_github02">
+              <span class="txt">Github</span>
+            </div>
+          </div><!--btn_github-->
+
+          <div class="btn_webpage">
+            <div class="btn_webpage01">
+              <div class="webpage_inner">
+                <span class="icon01"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="txt">Webpage</span>
+                <span class="icon02"><i class="fa-solid fa-arrow-right"></i></span> 
+              </div>
+            </div>
+            <div class="btn_webpage02">
+              <span>Webpage</span>
+            </div>
+          </div>   <!--btn_webpage-->
+        </div>  <!--btn_box-->
+      </div>  <!--right_box-->
+    </div>
+  </section>
+  
+  <section class="project_box02">
+    <div class="project02">
+      <div class="left_box">
+        <p class="pro_title">
+          팀 프로젝트 / 반응형 사이트
+        </p>
+        <p class="site">
+          영화의 전당 리뉴얼
+          <a href="https://www.dureraum.org/bcc/main/main.do?rbsIdx=1" target="_blank">
+            (기존 홈페이지 보기)
+          </a>
+        </p>
+        <p class="pro02_txt">
+          팀(5명) 프로젝트로 제작한 반응형 사이트입니다.<br />
+          기존의 적응형 사이트였던 영화의전당 홈페이지를 모바일과 웹에서의 사용성을 <br />
+          향상시키기 위해 반응형 사이트로 리뉴얼하였습니다.
+          <br />
+
+          <br />
+          팀원 모두가 각자 간단한 아이디어 스케치로 의견을 제시하고 토의를 통해  <br />UI/UX, 기능, 효과 등 아이디어를 통합하였고, 개별로 코드작업을 하였습니다.
+          <br /> 
+          아이디어 스케치(2명), 기획서 작성(3명) 파트에서
+          저는 기획서에 주제선정, 기획의도,<br />
+          컨셉과 키워드, font, color plan 작성을 담당하였습니다.
+
+        </p>
+        <ul class="skill_logo">
+          <li>
+            <img src="./images/html5.png" alt="skill로고 이미지">
+          </li>
+          <li>
+            <img src="./images/css3.png" alt="skill로고 이미지">
+          </li>
+          <li>
+            <img src="./images/javascript.svg" alt="skill로고 이미지">
+          </li>
+          <li>
+            <img src="./images/JQuery.png" alt="skill로고 이미지">
+          </li>
+        </ul>
+        <p class="proposal">
+          기획서 보기
+        </p>
+        <div class="btn_box">
+          <div class="btn_github">
+            <div class="btn_github01">
+              <div class="github_inner">
+                <span class="icon01"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="txt">Github</span>
+                <span class="icon02"><i class="fa-solid fa-arrow-right"></i></span> 
+              </div>
+            </div>
+            <div class="btn_github02">
+              <span class="txt">Github</span>
+            </div>
+          </div><!--btn_github-->
+
+          <div class="btn_webpage">
+            <div class="btn_webpage01">
+              <div class="webpage_inner">
+                <span class="icon01"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="txt">Webpage</span>
+                <span class="icon02"><i class="fa-solid fa-arrow-right"></i></span> 
+              </div>
+            </div>
+            <div class="btn_webpage02">
+              <span>Webpage</span>
+            </div>
+          </div>   <!--btn_webpage-->
+        </div>  <!--btn_box-->
+      </div>
+      <div class="modal_box">
+        <span class="btn_close">X</span>
+        <div class="proposal_sheet">
+          <ul class="proposal_box">
+            <li><img src="./images/pro2_props1.JPG" alt=""></li>
+            <li><img src="./images/pro2_props2.JPG" alt=""></li>
+            <li><img src="./images/pro2_props3.JPG" alt=""></li>
+            <li><img src="./images/pro2_props4.JPG" alt=""></li>
+            <li><img src="./images/pro2_props5.JPG" alt=""></li>
+            <li><img src="./images/pro2_props6.JPG" alt=""></li>
+            <li><img src="./images/pro2_props7.JPG" alt=""></li>
+            <li><img src="./images/pro2_props8.JPG" alt=""></li>
+            <li><img src="./images/pro2_props9.JPG" alt=""></li>
+            <li><img src="./images/pro2_props10.JPG" alt=""></li>
+            <li><img src="./images/pro2_props11.JPG" alt=""></li>
+            <li><img src="./images/pro2_props12.JPG" alt=""></li>
+            <li><img src="./images/pro2_props13.JPG" alt=""></li>
+            <li><img src="./images/pro2_props14.JPG" alt=""></li>
+            <li><img src="./images/pro2_props15.JPG" alt=""></li>
+            <li><img src="./images/pro2_props16.JPG" alt=""></li>
+            <li><img src="./images/pro2_props17.JPG" alt=""></li>
+            <li><img src="./images/pro2_props18.JPG" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pro_img">
+        <img src="./images/pro2_600.gif" alt="프로젝트 2 이미지">
+      </div>
+    </div>
+  </section>
+
+  <section class="project_box03">
+    <div class="project03">
+      <div class="pro_img">
+        <img src="./images/pro3_600.gif" alt="프로젝트 3 이미지">
+      </div>
+      <div class="right_box">
+        <p class="pro_title">
+          개인프로젝트 / 적응형 사이트(Web / Mobile)
+        </p>
+        <p class="site">
+          맛있닭 리뉴얼 
+          <a href="https://masitdak.com/" target="_blank">
+            (기존 홈페이지 보기)
+          </a>
+        </p>
+        <p class="pro03_txt">
+          개인 프로젝트로 웹과 모바일 버전 각각 제작한 적응형 사이트입니다.<br />
+          맛있닭 홈페이지를 기존사이트에서 사용성을 향상시키는 방향으로 리뉴얼했습니다. <br />
+          웹 사이트에서 Swiperjs를 활용하여 슬라이드를 구성하고, <br />
+          서브 페이지에는 sort기능을 lodash로 구현하였습니다.
+        </p>
+        <ul class="skill_logo">
+          <li><img src="./images/html5.png" alt="skill로고 이미지"></li>
+          <li><img src="./images/css3.png" alt="skill로고 이미지"></li>
+          <li><img src="./images/javascript.svg" alt="skill로고 이미지"></li>
+        </ul>
+        <p class="proposal">
+          기획서 보기
+        </p>
+        <div class="btn_box">
+          <div class="btn_github">
+            <div class="btn_github01">
+              <div class="github_inner">
+                <span class="icon01"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="txt">Github</span>
+                <span class="icon02"><i class="fa-solid fa-arrow-right"></i></span> 
+              </div>
+            </div>
+            <div class="btn_github02">
+              <span class="txt">Github</span>
+            </div>
+          </div><!--btn_github-->
+
+          <div class="btn_webpage">
+            <div class="btn_webpage01">
+              <div class="webpage_inner">
+                <span class="icon01"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="txt">Webpage</span>
+                <span class="icon02"><i class="fa-solid fa-arrow-right"></i></span> 
+              </div>
+            </div>
+            <div class="btn_webpage02">
+              <span>Webpage</span>
+            </div>
+          </div>   <!--btn_webpage-->
+
+          <div class="btn_mobile">
+            <div class="btn_mobile01">
+              <div class="mobile_inner">
+                <span class="icon01"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="txt">Mobile</span>
+                <span class="icon02"><i class="fa-solid fa-arrow-right"></i></span> 
+              </div>
+            </div>
+            <div class="btn_mobile02">
+              <span>Mobile</span>
+            </div>
+          </div>
+        </div>  <!--btn_box-->
+      </div>  <!--right_box-->
+      <div class="modal_box">
+        <span class="btn_close">X</span>
+        <div class="proposal_sheet">
+          <ul class="proposal_box">
+            <li><img src="./images/pro1_props1.JPG" alt=""></li>
+            <li><img src="./images/pro1_props2.JPG" alt=""></li>
+            <li><img src="./images/pro1_props3.JPG" alt=""></li>
+            <li><img src="./images/pro1_props4.JPG" alt=""></li>
+            <li><img src="./images/pro1_props5.JPG" alt=""></li>
+            <li><img src="./images/pro1_props6.JPG" alt=""></li>
+            <li>
+              Main color: White<br />
+              Sub color: Black<br />
+              Point color: Orange<br />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>   <!--project03-->
+  </section><!--project_box03-->
+  <section class="contact_box" >
+    <div class="contact">
+      <div class="txt">CONTACT</div>
+      <p class="phone">
+        <span class="phone_icon"><i class="fa-solid fa-mobile-screen-button"></i></span> 010 - 4022 - 0513
+      </p>
+      <p class="email">
+        <span class="email_icon"><i class="fa-solid fa-envelope"></i></span>dongq0513@gmail.com
+      </p>
+      <p class="thanks">감사합니다.</p>
+    </div>
+  </section>
+</body>
+</html>
