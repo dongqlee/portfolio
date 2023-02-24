@@ -206,12 +206,10 @@ window.addEventListener('scroll', () => {
 
 
 //button_effect
-
 const p1_btnGit = document.querySelector('.project01 .btn_github');
 const p1_btnGit01 = document.querySelector('.project01 .btn_github01');
 const p1_iconGit01 = document.querySelector('.project01 .github_inner .icon01');
 const p1_iconGit02 = document.querySelector('.project01 .github_inner .icon02');
-
 const p1_btnWeb = document.querySelector('.project01 .btn_webpage');
 const p1_btnWeb01 = document.querySelector('.project01 .btn_webpage01');
 const p1_iconWeb01 = document.querySelector('.project01 .webpage_inner .icon01');
@@ -263,7 +261,6 @@ p1_btnWeb.addEventListener('mouseleave', () => {
   p1_iconWeb01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
   p1_iconWeb02.style.cssText = 'transition: all 0.1s; opacity: 0;'
 })
-
 
 
 p2_btnGit.addEventListener('mouseenter', () => {
@@ -346,10 +343,6 @@ p3_btnWeb.addEventListener('click', () => {
 p3_btnMob.addEventListener('click', () => {
   window.open('https://dongqlee.github.io/project03_mob/', 'naver', 'width = 390, height = 720')
 })
-
-
-
-
 
 let web01 = document.querySelector('.project01 .pro_img');
 let web02 = document.querySelector('.project02 .pro_img');
