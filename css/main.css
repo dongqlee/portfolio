@@ -355,11 +355,12 @@ section {
 }
 
 /*-------project_box---------*/
+.project_box00,
 .project_box01 {
   background-image: url(./images/배경질감1.jpg);
   position: relative;
 }
-.project_box01 .pro_txt {
+.project_box00 .pro_txt {
   font-size: 60px;
   font-weight: bold;
   color: white;
@@ -369,11 +370,14 @@ section {
   opacity: 0.5;
   transform: rotate(-15deg);
 }
+
+.project_box00 .project00, 
 .project_box01 .project01 {
   width: 1250px; height: 100vh;
   margin: 0 auto;
   position: relative;
 }
+.project_box00 .project00 .pro_img,
 .project_box01 .project01 .pro_img {
   width: 600px; height: 320px;
   position: absolute;
@@ -382,6 +386,7 @@ section {
   cursor: pointer;
 }
 
+.project_box00 .project00 .right_box, 
 .project_box01 .project01 .right_box {
   width: 620px; height: 620px;
   position: absolute;
@@ -391,56 +396,69 @@ section {
   font-size: 24px;
 }
 
+.project00 .right_box .pro_title,
 .project01 .right_box .pro_title {
   position: absolute;
   top: 60px; left: 60px;
 }
+.project00 .right_box .pro00_txt,
 .project01 .right_box .pro01_txt {
   font-size: 16px;
   position: absolute;
   top: 160px; left: 60px;
 }
+.project00 .right_box .site,
 .project01 .right_box .site {
   position: absolute;
   top: 100px; left: 60px;
 }
+.project00 .right_box .site a,
 .project01 .right_box .site a {
   font-size: 18px;
   color: orange;
 }
+.project00 .right_box .site a:hover,
 .project01 .right_box .site a:hover {
   text-decoration: underline;
 }
+.project00 .right_box .skill_logo,
 .project01 .right_box .skill_logo {
   position: absolute;
   top: 300px; left: 60px;
   display: flex
 }
+.project00 .right_box .skill_logo li,
 .project01 .right_box .skill_logo li {
   width: 60px;
 }
+.project00 .right_box .skill_logo li:nth-child(1),
 .project01 .right_box .skill_logo li:nth-child(1) {
   width: 60px;
 }
+.project00 .right_box .skill_logo li:nth-child(2),
 .project01 .right_box .skill_logo li:nth-child(2) {
   width: 44px;
 }
+.project00 .right_box .skill_logo li:nth-child(3),
 .project01 .right_box .skill_logo li:nth-child(3) {
   width: 50px;
   position: absolute;
   top: 8px; left: 116px;
 }
+
 .project01 .right_box .skill_logo li:nth-child(4) {
   width: 55px;
   position: absolute;
   top: 8px; left: 180px;
 }
 
+.project_box00 .project00 .right_box .btn_box,
 .project_box01 .project01 .right_box .btn_box {
   width: 100%;
   position: absolute;
   bottom: 0;
 }
+.project_box00 .project00 .right_box .btn_box .btn_github01,
 .project_box01 .project01 .right_box .btn_box .btn_github01 {
   width: 50px; height: 50px;
  /* border-radius: 25px;*/
@@ -451,6 +469,7 @@ section {
   z-index: 99;
   cursor: pointer;
 }
+.project_box00 .project00 .right_box .btn_box .btn_github01 .github_inner,
 .project_box01 .project01 .right_box .btn_box .btn_github01 .github_inner {
   width: 180px; height: 50px;
   text-align: center;
@@ -458,11 +477,13 @@ section {
   font-size: 24px;
   line-height: 50px;
 }
+.project_box00 .project00 .right_box .btn_box .btn_github01 .github_inner .icon01,
 .project_box01 .project01 .right_box .btn_box .btn_github01 .github_inner .icon01 {
   position: absolute;
   left: 20px;
   font-size: 20px;
 }
+.project_box00 .project00 .right_box .btn_box .btn_github01 .github_inner .icon02,
 .project_box01 .project01 .right_box .btn_box .btn_github01 .github_inner .icon02 {
   position: absolute;
   right: 20px;
@@ -470,6 +491,7 @@ section {
   color: black;
   opacity: 0;
 }
+.project_box00 .project00 .right_box .btn_box .btn_github02,
 .project_box01 .project01 .right_box .btn_box .btn_github02 {
   width: 150px; height: 50px;
   text-align: center;
@@ -479,6 +501,7 @@ section {
   bottom: 20px; left: 75px;
   color: white;
 }
+.project_box00 .project00 .right_box .btn_box .btn_webpage01,
 .project_box01 .project01 .right_box .btn_box .btn_webpage01 {
   width: 50px; height: 50px;
   overflow: hidden;
@@ -488,6 +511,7 @@ section {
   z-index: 99;
   cursor: pointer;;
 }
+.project_box00 .project00 .right_box .btn_box .btn_webpage01 .webpage_inner,
 .project_box01 .project01 .right_box .btn_box .btn_webpage01 .webpage_inner {
   width: 180px; height: 50px;
   text-align: center;
@@ -495,11 +519,13 @@ section {
   font-size: 24px;
   line-height: 50px;
 }
+.project_box00 .project00 .right_box .btn_box .btn_webpage01 .webpage_inner .icon01,
 .project_box01 .project01 .right_box .btn_box .btn_webpage01 .webpage_inner .icon01 {
   position: absolute;
   left: 20px;
   font-size: 20px;
 }
+.project_box00 .project00 .right_box .btn_box .btn_webpage01 .webpage_inner .icon02,
 .project_box01 .project01 .right_box .btn_box .btn_webpage01 .webpage_inner .icon02 {
   position: absolute;
   right: 16px;
@@ -507,6 +533,7 @@ section {
   opacity: 0;
   color: black;
 }
+.project_box00 .project00 .right_box .btn_box .btn_webpage02,
 .project_box01 .project01 .right_box .btn_box .btn_webpage02 {
   width: 150px; height: 50px;
   text-align: center;
@@ -517,7 +544,7 @@ section {
   color: white;
 }
 
-
+/*
 .project_box02 {
   background-image: url(./images/배경질감1.jpg);
 }
@@ -604,7 +631,7 @@ section {
 }
 .project_box02 .project02 .left_box .btn_box .btn_github01 {
   width: 50px; height: 50px;
- /* border-radius: 25px;*/
+ /* border-radius: 25px;*//*
   overflow: hidden;
   background-color: white;
   position: absolute;
@@ -682,15 +709,19 @@ section {
   bottom: 20px; left: 330px;
   color: white;
 }
+*/
+.project_box02,
 .project_box03 {
   background-image: url(./images/배경질감1.jpg);
 }
 
+.project_box02 .project02,
 .project_box03 .project03 {
   width: 1250px; height: 100vh;
   margin: 0 auto;
   position: relative;
 }
+.project_box02 .project02 .pro_img,
 .project_box03 .project03 .pro_img {
   width: 600px; height: 320px;
   position: absolute;
@@ -699,6 +730,7 @@ section {
   cursor: pointer;
 }
 
+.project_box02 .project02 .right_box,
 .project_box03 .project03 .right_box {
   width: 620px; height: 620px;
   position: absolute;
@@ -708,27 +740,33 @@ section {
   font-size: 24px;
 }
 
+.project02 .right_box .pro_title,
 .project03 .right_box .pro_title {
   position: absolute;
   top: 60px; left: 60px;
 }
+.project02 .right_box .site,
 .project03 .right_box .site {
   position: absolute;
   top: 100px; left: 60px;
 }
+.project02 .right_box .site a,
 .project03 .right_box .site a {
   font-size: 18px;
   color: orange;
 }
+.project02 .right_box .site a:hover,
 .project03 .right_box .site a:hover {
   text-decoration: underline;
 }
+.project02 .right_box .proposal,
 .project03 .right_box .proposal {
   position: absolute;
   bottom: 120px; left: 60px;
   font-size: 24px;
   cursor: pointer;
 }
+.project02 .right_box .proposal:hover,
 .project03 .right_box .proposal:hover {
   text-decoration: underline;
 }
@@ -760,6 +798,7 @@ section {
   position: relative;
 }
 
+.project02 .modal_box .proposal_box li:last-child,
 .project03 .modal_box .proposal_box li:last-child {
   padding: 10px;
   background-color: white;
@@ -775,35 +814,47 @@ section {
   text-align: right;
   cursor: pointer;
 }
+.project02 .right_box .pro02_txt,
 .project03 .right_box .pro03_txt {
   font-size: 16px;
   position: absolute;
   top: 160px; left: 60px;
+}
+.project02 .right_box .skill_logo {
+  position: absolute;
+  top: 360px; left: 60px;
+  display: flex
 }
 .project03 .right_box .skill_logo {
   position: absolute;
   top: 300px; left: 60px;
   display: flex
 }
+.project02 .right_box .skill_logo li,
 .project03 .right_box .skill_logo li {
   width: 60px;
 }
+.project02 .right_box .skill_logo li:nth-child(1),
 .project03 .right_box .skill_logo li:nth-child(1) {
   width: 60px;
 }
+.project02 .right_box .skill_logo li:nth-child(2), 
 .project03 .right_box .skill_logo li:nth-child(2) {
   width: 44px;
 }
+.project02 .right_box .skill_logo li:nth-child(3), 
 .project03 .right_box .skill_logo li:nth-child(3) {
   width: 50px;
   position: absolute;
   top: 8px; left: 116px;
 }
+.project_box02 .project02 .right_box .btn_box, 
 .project_box03 .project03 .right_box .btn_box {
   width: 100%;
   position: absolute;
   bottom: 0;
 }
+.project_box02 .project02 .right_box .btn_box .btn_github01,
 .project_box03 .project03 .right_box .btn_box .btn_github01 {
   width: 50px; height: 50px;
   overflow: hidden;
@@ -813,6 +864,7 @@ section {
   z-index: 99;
   cursor: pointer;
 }
+.project_box02 .project02 .right_box .btn_box .btn_github01 .github_inner,
 .project_box03 .project03 .right_box .btn_box .btn_github01 .github_inner {
   width: 180px; height: 50px;
   text-align: center;
@@ -820,11 +872,13 @@ section {
   font-size: 24px;
   line-height: 50px;
 }
+.project_box02 .project02 .right_box .btn_box .btn_github01 .github_inner .icon01,
 .project_box03 .project03 .right_box .btn_box .btn_github01 .github_inner .icon01 {
   position: absolute;
   left: 20px;
   font-size: 20px;
 }
+.project_box02 .project02 .right_box .btn_box .btn_github01 .github_inner .icon02,
 .project_box03 .project03 .right_box .btn_box .btn_github01 .github_inner .icon02 {
   position: absolute;
   right: 20px;
@@ -832,6 +886,7 @@ section {
   color: black;
   opacity: 0;
 }
+.project_box02 .project02 .right_box .btn_box .btn_github02,
 .project_box03 .project03 .right_box .btn_box .btn_github02 {
   width: 150px; height: 50px;
   text-align: center;
@@ -842,6 +897,7 @@ section {
   color: white;
 }
 
+.project_box02 .project02 .right_box .btn_box .btn_webpage01,
 .project_box03 .project03 .right_box .btn_box .btn_webpage01 {
   width: 50px; height: 50px;
   overflow: hidden;
@@ -852,6 +908,7 @@ section {
   cursor: pointer;;
 }
 
+.project_box02 .project02 .right_box .btn_box .btn_webpage01 .webpage_inner,
 .project_box03 .project03 .right_box .btn_box .btn_webpage01 .webpage_inner {
   width: 180px; height: 50px;
   text-align: center;
@@ -859,11 +916,13 @@ section {
   font-size: 24px;
   line-height: 50px;
 }
+.project_box02 .project02 .right_box .btn_box .btn_webpage01 .webpage_inner .icon01,
 .project_box03 .project03 .right_box .btn_box .btn_webpage01 .webpage_inner .icon01 {
   position: absolute;
   left: 20px;
   font-size: 20px;
 }
+.project_box02 .project02 .right_box .btn_box .btn_webpage01 .webpage_inner .icon02,
 .project_box03 .project03 .right_box .btn_box .btn_webpage01 .webpage_inner .icon02 {
   position: absolute;
   right: 16px;
@@ -871,6 +930,7 @@ section {
   opacity: 0;
   color: black;
 }
+.project_box02 .project02 .right_box .btn_box .btn_webpage02,
 .project_box03 .project03 .right_box .btn_box .btn_webpage02 {
   width: 150px; height: 50px;
   text-align: center;
@@ -881,6 +941,7 @@ section {
   color: white;
 }
 
+.project_box02 .project02 .right_box .btn_box .btn_mobile01,
 .project_box03 .project03 .right_box .btn_box .btn_mobile01 {
   width: 50px; height: 50px;
   overflow: hidden;
@@ -891,6 +952,7 @@ section {
   cursor: pointer;;
 }
 
+.project_box02 .project02 .right_box .btn_box .btn_mobile01 .mobile_inner,
 .project_box03 .project03 .right_box .btn_box .btn_mobile01 .mobile_inner {
   width: 180px; height: 50px;
   text-align: center;
@@ -898,12 +960,14 @@ section {
   font-size: 24px;
   line-height: 50px;
 }
+.project_box02 .project02 .right_box .btn_box .btn_mobile01 .mobile_inner .icon01,
 .project_box03 .project03 .right_box .btn_box .btn_mobile01 .mobile_inner .icon01 {
   position: absolute;
   left: 20px;
   font-size: 20px;
 }
 
+.project_box02 .project02 .right_box .btn_box .btn_mobile01 .mobile_inner .icon02,
 .project_box03 .project03 .right_box .btn_box .btn_mobile01 .mobile_inner .icon02 {
   position: absolute;
   right: 16px;
@@ -911,6 +975,7 @@ section {
   opacity: 0;
   color: black;
 }
+.project_box02 .project02 .right_box .btn_box .btn_mobile02,
 .project_box03 .project03 .right_box .btn_box .btn_mobile02 {
   width: 150px; height: 50px;
   font-size: 24px;

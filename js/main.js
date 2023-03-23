@@ -32,7 +32,7 @@ const profile = document.getElementById('profile')
 const project = document.getElementById('project')
 const contact = document.getElementById('contact')
 const pageProfile =document.querySelector('.profile_box')
-const pageproject =document.querySelector('.project_box01')
+const pageproject =document.querySelector('.project_box00')
 const pageContact =document.querySelector('.contact_box')
 const arrow = document.querySelector('.arrow')
 
@@ -206,6 +206,15 @@ window.addEventListener('scroll', () => {
 
 
 //button_effect
+const p0_btnGit = document.querySelector('.project00 .btn_github');
+const p0_btnGit01 = document.querySelector('.project00 .btn_github01');
+const p0_iconGit01 = document.querySelector('.project00 .github_inner .icon01');
+const p0_iconGit02 = document.querySelector('.project00 .github_inner .icon02');
+const p0_btnWeb = document.querySelector('.project00 .btn_webpage');
+const p0_btnWeb01 = document.querySelector('.project00 .btn_webpage01');
+const p0_iconWeb01 = document.querySelector('.project00 .webpage_inner .icon01');
+const p0_iconWeb02 = document.querySelector('.project00 .webpage_inner .icon02');
+
 const p1_btnGit = document.querySelector('.project01 .btn_github');
 const p1_btnGit01 = document.querySelector('.project01 .btn_github01');
 const p1_iconGit01 = document.querySelector('.project01 .github_inner .icon01');
@@ -237,6 +246,29 @@ const p3_btnMob01 = document.querySelector('.project03 .btn_mobile01');
 const p3_iconMob01 = document.querySelector('.project03 .mobile_inner .icon01');
 const p3_iconMob02 = document.querySelector('.project03 .mobile_inner .icon02');
 
+p0_btnGit.addEventListener('mouseenter', () => {
+  p0_btnGit01.style.cssText = 'transition: all 0.3s; width: 180px;'
+  p0_iconGit01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
+  p0_iconGit02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
+})
+
+p0_btnGit.addEventListener('mouseleave', () => {
+  p0_btnGit01.style.cssText = 'transition: all 0.3s; width: 50px;'
+  p0_iconGit01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
+  p0_iconGit02.style.cssText = 'transition: all 0.1s; opacity: 0;'
+})
+
+p0_btnWeb.addEventListener('mouseenter', () => {
+  p0_btnWeb01.style.cssText = 'transition: all 0.3s; width: 180px;'
+  p0_iconWeb01.style.cssText = 'transition: all 0.7s 0.1s; left: 160px; opacity: 0;'
+  p0_iconWeb02.style.cssText = 'transition: all 0.3s 0.3s; opacity: 1;'
+})
+
+p0_btnWeb.addEventListener('mouseleave', () => {
+  p0_btnWeb01.style.cssText = 'transition: all 0.3s; width: 50px;'
+  p0_iconWeb01.style.cssText = 'transition: all 0.1s 0.1s; left: 20px;'
+  p0_iconWeb02.style.cssText = 'transition: all 0.1s; opacity: 0;'
+})
 
 p1_btnGit.addEventListener('mouseenter', () => {
   p1_btnGit01.style.cssText = 'transition: all 0.3s; width: 180px;'
@@ -322,6 +354,12 @@ p3_btnWeb.addEventListener('mouseleave', () => {
   p3_iconWeb02.style.cssText = 'transition: all 0.1s; opacity: 0;'
 })
 
+p0_btnGit.addEventListener('click', () => {
+  window.open('https://github.com/dongqlee/todolist')
+})
+p0_btnWeb.addEventListener('click', () => {
+  window.open('https://dongqlee.github.io/todolist/')
+})
 p1_btnGit.addEventListener('click', () => {
   window.open('https://github.com/dongqlee/react_jordan.git')
 })
@@ -344,9 +382,15 @@ p3_btnMob.addEventListener('click', () => {
   window.open('https://dongqlee.github.io/project03_mob/', 'naver', 'width = 390, height = 720')
 })
 
+let web00 = document.querySelector('.project00 .pro_img');
 let web01 = document.querySelector('.project01 .pro_img');
 let web02 = document.querySelector('.project02 .pro_img');
 let web03 = document.querySelector('.project03 .pro_img');
+
+
+web00.addEventListener('click', () => {
+  window.open('https://dongqlee.github.io/todolist/')
+});
 
 web01.addEventListener('click', () => {
   window.open('https://dongqlee.github.io/react_jordan')
@@ -362,10 +406,6 @@ web03.addEventListener('click', () => {
 
 
 //
-let project01 = document.querySelector('.project01');
-let project02 = document.querySelector('.project02');
-let project03 = document.querySelector('.project03');
-
 let btnPro02 = document.querySelector('.project02 .proposal');
 let btnPro03 = document.querySelector('.project03 .proposal');
 

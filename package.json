@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongqlee/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongqlee/portfolio/issues"
+  },
+  "homepage": "https://github.com/dongqlee/portfolio",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
